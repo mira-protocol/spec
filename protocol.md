@@ -1,8 +1,16 @@
 # Protocol
 When a client connects to the server, they are ready to exchange requests
 
-## Notes
+## Integers
 Integers are big endian
+
+## Error codes
+| Code | Description                                |
+| ---- | ------------------------------------------ |
+| 0    | Success                                    |
+| 1    | Page not found                             |
+| 2    | Bad path                                   |
+| 3    | Unknown domain                             |
 
 ## Client -> Server packets
 ### GET packet
