@@ -13,11 +13,13 @@ Integers are big endian
 | 3    | Unknown domain                             |
 
 ## Client -> Server packets
+Fields are in order of how they are received
+
 ### GET packet
 
 | Field       | Type                 | Description                                      |
 | ----------- | -------------------- | ------------------------------------------------ |
-| Packet ID   | Byte                 | Equal to 'G' in ASCII                            |
+| Packet ID   | Byte                 | Equal to 'G' in 8-bit ASCII                      |
 | Domain      | LF-terminated string | String containing the domain of the site         |
 | Path        | LF-terminated string | String containing the path of the URL            |
 
