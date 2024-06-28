@@ -15,7 +15,7 @@ Integers are big endian
 ## Client -> Server packets
 Fields are in order of how they are received
 
-### GET packet
+### Get packet
 
 | Field       | Type                 | Description                                      |
 | ----------- | -------------------- | ------------------------------------------------ |
@@ -32,3 +32,11 @@ Response:
 | Contents    | Bytes                   | Is `Length` bytes long and is the page contents   |
 
 
+## Bidirectional packets
+### Ping packet
+| Field       | Type                 | Description                                      |
+| ----------- | -------------------- | ------------------------------------------------ |
+| Packet ID   | Byte                 | Equal to 'P' in 8-bit ASCII                      |
+
+
+Response: none
