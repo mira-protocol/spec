@@ -28,7 +28,7 @@ Response:
 | Field       | Type                    | Description                                       |
 | ----------- | ----------------------- | ------------------------------------------------- |
 | Error code  | Byte                    | Rest of the packet is not present if this isn't 0 |
-| Length      | 64-bit unsigned integer | Length of the page contents                       |
+| Length      | 64-bit unsigned integer | Length of the page contents in bytes              |
 | Contents    | Bytes                   | Is `Length` bytes long and is the page contents   |
 
 
