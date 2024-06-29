@@ -30,6 +30,13 @@ Possible response: Text input
 | Packet ID   | Byte                 | Equal to 'T' in 8-bit ASCII                      |
 | Prompt      | LF-terminated string | String containing a prompt for text input        |
 
+Which is then responded to again with this packet:
+
+| Field       | Type                 | Description                                      |
+| ----------- | -------------------- | ------------------------------------------------ |
+| Packet ID   | Byte                 | Equal to 'T' in 8-bit ASCII                      |
+| Input       | LF-terminated string | String containing the user's input               |
+
 Final response: Page contents
 
 | Field       | Type                    | Description                                       |
